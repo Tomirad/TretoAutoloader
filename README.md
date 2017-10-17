@@ -6,8 +6,11 @@ Examples:
 ```php
 require_once __DIR__.'/classes/Treto/Loader.php';
 $Loader =  new Loader;
+
+//multi destination folder with classes
 $Loader -> register([
-	'../vendor',
-	'../otherClass/folder/' //optional
+	'../classes',
+	'../vendor', 
+	'../otherClass/folder/'
 ]);
 ```
